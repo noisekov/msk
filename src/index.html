@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.scss">
+    <title>Процессинг</title>
+</head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header container">
+                    <div class="header__logo">
+                        <img src="./images/logo.png" width="220" height="45" alt="logo">
+                    </div>
+                    <div class="header__content">
+                        <a href="tel:84951278280" class="header__phone">
+                            8 (495) 127-82-80
+                        </a>
+                        <div class="header__btns">
+                            <button class="header__btn btn">Напишите нам</button>
+                            <button class="btn header__btn-personal">Личный кабинет</button>
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <div class="nav container">
+                        <ul class="nav__list">
+                            <li class="nav__list-item"><a class="nav__link" href="#">Доставка топлива</a></li>
+                            <li class="nav__list-item">
+                                <a class="nav__link" href="#">Топливные карты
+                                    <span class="nav__link-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="nav__list-item">
+                                <a class="nav__link" href="#">АЗС
+                                    <span class="nav__link-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">Цены на топливо</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">Цены на топливо</a></li>
+                            <li class="nav__list-item">
+                                <a class="nav__link" href="#">О компании
+                                    <span class="nav__link-arrow"></span>
+                                </a>
+                            </li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <h1 class="container main__title">Доставка топлива</h1>
+                <section class="fast-order container">
+                    <h2 class="fast-order__title">Быстрый <span>заказ топлива</span></h2>
+                    <form action="/" method="post">
+                        <div class="fast-order__form">
+                            <fieldset>
+                                <legend class="fast-order__input-title">Ваше имя</legend>
+                                <input class="fast-order__input input" type="text" placeholder="Иван">
+                            </fieldset>
+                            <fieldset>
+                                <legend class="fast-order__input-title">Номер телефона</legend>
+                                <input class="fast-order__input input" type="text" placeholder="+7 (___) ___-__-__">
+                            </fieldset>
+                            <button class="fast-order__btn btn">Заказать топливо</button>
+                        </div>
+                        <div class="fast-order__checkbox">
+                            <label class="fast-order__checkbox-label">
+                                <input class="fast-order__checkbox-input" type="checkbox">Я согласен с условиями обработки данных
+                                <span class="fast-order__checkbox-span"></span>
+                            </label>
+                        </div>
+                    </form>
+                </section>
+                <section class="cost-oil container">
+                    <h2 class="cost-oil__title">Стоимость топлива</h2>
+                    <table style="width: 100%; border-collapse: collapse; font-weight: 600;">
+                        <thead style="background: #043C77; color: #ffffff; height: 56px; border-bottom: 20px solid #F4F4F6;">
+                            <tr>
+                                <th>Сорт топлива</th>
+                                <th>Экологический класс</th>
+                                <th>Производитель</th>
+                                <th>Наличный расчет</th>
+                                <th>Безналичный расчет</th>
+                            </tr>
+                        </thead>
+                        <tbody style="height: 239px; text-align: center; border-bottom: 20px solid #F4F4F6;">
+                            <tr>
+                                <td rowspan="5" style="background: #098FCF; color: #ffffff;">ДТ</td>
+                                <td rowspan="3" >ЕВРО-5</td>
+                                <td>Газпромнефть</td>
+                                <td>45.43 р.</td>
+                                <td>44.43 р.</td>
+                            </tr>
+                            <tr>
+                                <td>Лукойл</td>
+                                <td>45.16 р.</td>
+                                <td>43.98 р.</td>
+                            </tr>
+                            <tr>
+                                <td>Роснефть</td>
+                                <td>42.34 р.</td>
+                                <td>41.64 р.</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">ЕВРО-4</td>
+                                <td>Газпромнефть</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Лукойл</td>
+                                <td>41.16 р.</td>
+                                <td>40.67 р.</td>
+                            </tr>
+                        </tbody>
+                        <tfoot style="text-align:center; height:382px;">
+                            <tr>
+                                <td rowspan="8" style="background: #098FCF; color: #ffffff;">АИ-95</td>
+                                <td rowspan="3">ЕВРО-5</td>
+                                <td>Газпромнефть</td>
+                                <td>41.16 р.</td>
+                                <td>40.67 р.</td>
+                            </tr>
+                            <tr>
+                                <td>Роснефть</td>
+                                <td>41.16 р.</td>
+                                <td>40.67 р.</td>
+                            </tr>
+                            <tr>
+                                <td>Лукойл</td>
+                                <td>41.16 р.</td>
+                                <td>40.67 р.</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">ЕВРО-4</td>
+                                <td>Лукойл</td>
+                                <td>41.16 р.</td>
+                                <td>40.67 р.</td>
+                            </tr>
+                            <tr>
+                                <td>Газпромнефть</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">ЕВРО-3</td>
+                                <td>Роснефть</td>
+                                <td>41.16 р.</td>
+                                <td>40.67 р.</td>
+                            </tr>
+                            <tr>
+                                <td>Газпромнефть</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Лукойл</td>
+                                <td>41.16 р.</td>
+                                <td>40.67 р.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

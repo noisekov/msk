@@ -1,0 +1,27 @@
+{
+  "name": "msk",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://noisekov.github.io/msk",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html -d docs --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.12",
+    "gh-pages": "^4.0.0",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "jsdom": "^20.0.0",
+    "src": "^1.1.2"
+  }
+}
