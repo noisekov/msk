@@ -268,13 +268,52 @@ nav {
 .fast-order__checkbox-input:checked + .fast-order__checkbox-span::after {
 	display: block;
 }
-
-.cost-oil {
-	
-}
 .cost-oil__title {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 44px;
 	margin-bottom: 48px;
+}
+.cost-oil__table-head {
+	background: #043C77;
+	color: #ffffff;
+	height: 64px;
+	border-bottom: 20px solid #F4F4F6;
+}
+.cost-oil__table {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+	border-collapse: collapse;
+	width: 100%;
+	text-align: left;
+}
+.cost-oil__table-body {
+	height: 260px;
+	border-bottom: 20px solid #F4F4F6;
+}
+.cost-oil__table-footer {
+	height: 382px;
+}
+.cost-oil__table-body-type {
+	background: #098FCF;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+.cost-oil__table-footer-type {
+	background: #098FCF;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+}
+th, td {
+	padding-left: 20px;
+	padding-top: 16px;
+	vertical-align: top;
+}
+tr,td {
+	border: 1px solid #E7E7E7;
 }
