@@ -310,15 +310,15 @@ template {
 
 @font-face {
   font-family: "Montserrat";
-  src: url("/Montserrat-Bold.70d570c7.eot");
-  src: local("☺"), url("/Montserrat-Bold.73e94c2c.woff") format("woff"), url("/Montserrat-Bold.f3410305.ttf") format("truetype"), url("/Montserrat-Bold.0fff2121.svg") format("svg");
+  src: url("Montserrat-Bold.70d570c7.eot");
+  src: local("☺"), url("Montserrat-Bold.73e94c2c.woff") format("woff"), url("Montserrat-Bold.f3410305.ttf") format("truetype"), url("Montserrat-Bold.0fff2121.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/Montserrat-Regular.21b801b8.eot");
-  src: local("☺"), url("/Montserrat-Regular.1b35f2ae.woff") format("woff"), url("/Montserrat-Regular.44e710c1.ttf") format("truetype"), url("/Montserrat-Regular.6f6bdac5.svg") format("svg");
+  src: url("Montserrat-Regular.21b801b8.eot");
+  src: local("☺"), url("Montserrat-Regular.1b35f2ae.woff") format("woff"), url("Montserrat-Regular.44e710c1.ttf") format("truetype"), url("Montserrat-Regular.6f6bdac5.svg") format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -380,7 +380,7 @@ header {
   width: 20px;
   height: 20px;
   display: block;
-  background: url(/phone.886756f7.svg);
+  background: url(phone.886756f7.svg);
 }
 
 .header__btns {
@@ -402,7 +402,7 @@ header {
   content: "";
   width: 14px;
   height: 14px;
-  background: url(/person.bba0457a.svg);
+  background: url(person.bba0457a.svg);
 }
 
 .btn {
@@ -455,7 +455,7 @@ nav {
 }
 
 .nav__link-arrow {
-  background: url(/arrow.9a5119e9.svg);
+  background: url(arrow.9a5119e9.svg);
   width: 20px;
   height: 20px;
   display: inline-block;
@@ -561,7 +561,7 @@ nav {
   content: "";
   width: 24px;
   height: 24px;
-  background: url(/check.00a838b3.svg);
+  background: url(check.00a838b3.svg);
   background-repeat: no-repeat;
 }
 
