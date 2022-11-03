@@ -178,6 +178,8 @@ nav {
 	box-sizing: border-box;
 	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 	padding: 20px 192px 43px 96px;
+}
+.mb100 {
 	margin-bottom: 100px;
 }
 	// .fast-order__form
@@ -185,9 +187,10 @@ nav {
 .fast-order__form {
 	display: flex;
 	align-items: flex-end;
+}
+.mb30 {
 	margin-bottom: 30px;
 }
-
 // .fast-order__btn
 
 .fast-order__btn {
@@ -211,13 +214,13 @@ nav {
 	}
 }
 
-.fast-order__input-title {
+.fieldset__title {
 	font-weight: 500;
 	font-size: 12px;
 	line-height: 15px;
 	margin-bottom: 7px;
 }
-.input {
+.fieldset__input {
 	padding: 12px 0 13px 15px;
 }
 
@@ -277,8 +280,7 @@ nav {
 .cost-oil__table-head {
 	background: #043C77;
 	color: #ffffff;
-	height: 64px;
-	border-bottom: 20px solid #F4F4F6;
+	height: 56px;
 }
 .cost-oil__table {
 	font-weight: 600;
@@ -289,8 +291,11 @@ nav {
 	text-align: left;
 }
 .cost-oil__table-body {
-	height: 260px;
-	border-bottom: 20px solid #F4F4F6;
+	height: 240px;
+}
+.cost-oil__table-span {
+	height: 20px;
+	border: none;
 }
 .cost-oil__table-footer {
 	height: 382px;
@@ -301,6 +306,7 @@ nav {
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 29px;
+	width: 141px;
 }
 .cost-oil__table-footer-type {
 	background: #098FCF;
@@ -309,11 +315,134 @@ nav {
 	font-size: 24px;
 	line-height: 29px;
 }
+.cost-oil__table-position {
+	vertical-align:middle
+}
 th, td {
 	padding-left: 20px;
 	padding-top: 16px;
 	vertical-align: top;
 }
-tr,td {
+tr {
 	border: 1px solid #E7E7E7;
 }
+.cost-oil__class-head {
+	width:270px;
+}
+.cost-oil__class {
+	border-right: 1px solid #E7E7E7;
+}
+.cost-oil__manufacturer {
+	width:273px;
+}
+.cost-oil__cash {
+	width: 165px;
+}
+.mb16 {
+	margin-bottom: 16px;
+}
+
+.oil-delivery {
+	background: #F9F9F9;
+}
+// .oil-delivery__title
+
+.oil-delivery__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	margin-bottom: 38px;
+}
+
+// .oil-delivery__content
+
+.oil-delivery__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+// .oil-delivery__form-block
+
+.oil-delivery__form-block {
+
+}
+
+.oil-delivery__wrapper {
+	padding-top: 40px;
+	padding-bottom: 73px;
+}
+
+.oil-delivery__calc {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 22px;
+	&--last {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 16px;
+	}
+}
+.order {
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 639px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+.order__title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 29px;
+}
+.order__wrapper {
+	padding: 40px;
+}
+hr {
+	border: none;
+	border-top: 1px solid #E7E7E7;
+	margin: 0;
+	margin-top: 12px;
+}
+
+.oil-delivery__input {
+	width: 405px;
+    box-sizing: border-box;
+    border: 1px solid #D5D5D5;
+}
+.oil-delivery__input-position {
+	position: relative;
+}
+.oil-delivery__range {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1px;
+	border: none;
+	cursor: pointer;
+}
+
+.calc__subtitle {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #565656;
+	width: 345px;
+}
+
+.calc__benefit-sum {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000000;
+
+}
+.mb27 {
+	margin-bottom: 27px;
+}
+// .calc__btn
+
+.calc__btn {
+	width: 255px;
+}
+
