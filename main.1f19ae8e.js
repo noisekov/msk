@@ -117,62 +117,48 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
-  return bundleURL;
+})({"main.js":[function(require,module,exports) {
+var range = document.querySelector(".js-range");
+var calcPrice = document.querySelector(".calc__price");
+var rangeValue = document.querySelector(".js-range-value");
+var calcCost = document.querySelector(".calc__cost");
+var benefitSum = document.querySelector(".calc__benefit-sum");
+range.addEventListener('input', changeValue);
+function changeValue() {
+  rangeValue.value = range.value + ' литров';
+  var sumOil = +range.value * parseFloat(calcPrice.innerHTML);
+  var newSumOil = sumOil.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  calcCost.innerHTML = newSumOil + ' ₽';
+  var benefit = +range.value * 49.59;
+  var value = parseInt(benefit * 100) / 100 - sumOil;
+  var rightValue = parseInt(value * 100) / 100;
+  var newValue = rightValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  benefitSum.innerHTML = newValue + " ₽";
 }
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-  return '/';
+var oilValie = document.querySelector('.js-entre');
+
+//clear field when click
+oilValie.addEventListener('click', clearField);
+function clearField() {
+  oilValie.value = '';
+  oilValie.removeEventListener;
 }
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
+
+//change price when writting personal value in input
+oilValie.addEventListener('input', changeInput);
+function changeInput() {
+  var sumOil = +oilValie.value * parseFloat(calcPrice.innerHTML);
+  var newSumOil = sumOil.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  calcCost.innerHTML = newSumOil + ' ₽';
+  var benefit = +oilValie.value * 49.59;
+  var value = parseInt(benefit * 100) / 100 - sumOil;
+  var rightValue = parseInt(value * 100) / 100;
+  var newValue = rightValue.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  benefitSum.innerHTML = newValue + " ₽";
 }
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-    cssTimeout = null;
-  }, 50);
-}
-module.exports = reloadCSS;
-},{"./bundle-url":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles/style.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\fonts\\Montserrat-Bold.eot":[["Montserrat-Bold.70d570c7.eot","fonts/Montserrat-Bold.eot"],"fonts/Montserrat-Bold.eot"],"./..\\fonts\\Montserrat-Bold.woff":[["Montserrat-Bold.73e94c2c.woff","fonts/Montserrat-Bold.woff"],"fonts/Montserrat-Bold.woff"],"./..\\fonts\\Montserrat-Bold.ttf":[["Montserrat-Bold.f3410305.ttf","fonts/Montserrat-Bold.ttf"],"fonts/Montserrat-Bold.ttf"],"./..\\fonts\\Montserrat-Bold.svg":[["Montserrat-Bold.0fff2121.svg","fonts/Montserrat-Bold.svg"],"fonts/Montserrat-Bold.svg"],"./..\\fonts\\Montserrat-Regular.eot":[["Montserrat-Regular.21b801b8.eot","fonts/Montserrat-Regular.eot"],"fonts/Montserrat-Regular.eot"],"./..\\fonts\\Montserrat-Regular.woff":[["Montserrat-Regular.1b35f2ae.woff","fonts/Montserrat-Regular.woff"],"fonts/Montserrat-Regular.woff"],"./..\\fonts\\Montserrat-Regular.ttf":[["Montserrat-Regular.44e710c1.ttf","fonts/Montserrat-Regular.ttf"],"fonts/Montserrat-Regular.ttf"],"./..\\fonts\\Montserrat-Regular.svg":[["Montserrat-Regular.6f6bdac5.svg","fonts/Montserrat-Regular.svg"],"fonts/Montserrat-Regular.svg"],"C:\\Users\\volod\\OneDrive\\Рабочий стол\\msk\\src\\images\\icon\\phone.svg":[["phone.886756f7.svg","images/icon/phone.svg"],"images/icon/phone.svg"],"C:\\Users\\volod\\OneDrive\\Рабочий стол\\msk\\src\\images\\icon\\person.svg":[["person.bba0457a.svg","images/icon/person.svg"],"images/icon/person.svg"],"C:\\Users\\volod\\OneDrive\\Рабочий стол\\msk\\src\\images\\icon\\arrow.svg":[["arrow.9a5119e9.svg","images/icon/arrow.svg"],"images/icon/arrow.svg"],"C:\\Users\\volod\\OneDrive\\Рабочий стол\\msk\\src\\images\\icon\\check.svg":[["check.00a838b3.svg","images/icon/check.svg"],"images/icon/check.svg"],"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+//DRY doesn't work i know :)
+},{}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -341,5 +327,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/style.ff1c4cab.js.map
+},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
+//# sourceMappingURL=/main.1f19ae8e.js.map
