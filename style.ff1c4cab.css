@@ -623,6 +623,7 @@ nav {
 
 .cost-oil__table-position {
   vertical-align: middle;
+  padding-top: 0;
 }
 
 th, td {
